@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Draw & Learn | Book Your Art Classes</title>
+  <meta name="description" content="Book drawing classes online and learn from professional artists." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Draw & Learn</div>
+    <nav id="navbar">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#artists">Artists</a>
+      <a href="#classes">Classes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="menu-toggle" class="hamburger">&#9776;</button>
+  </header>
+
+  <section id="hero">
+    <h1>Unleash Your Creativity</h1>
+    <p>Join our drawing classes and learn from expert artists.<br> All levels welcome!</p>
+    
+    <a href="#classes" class="btn">Book a Class</a>
+  </section>
+
+  <section id="about">
+    <h1>About Us</h1>
+    <div class="about-content">
+      <img src="images/art_2.png" alt="About Art Class">
+      <p>Draw & Learn is a vibrant creative platform offering both live and online drawing classes led by professional artists. <br>
+        Whether you're picking up a pencil for the first time or you're an experienced artist looking to refine <br>
+        your skills, there's something for everyone.Our interactive sessions cover a wide range<br> 
+         of styles and techniques, making art accessible, enjoyable, and enriching for<br>
+        all ages and skill levels.
+        
+         </p>
+
+    </div>
+  </section>
+
+  <section id="artists">
+    <h1>Meet Our Artists</h1>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/artist_1.jpg" alt="Artist 1">
+        <h3>Mr. Devid</h3>
+        <p>Specializes in pencil shading and realistic portraits.</p>
+      </div>
+      <div class="card">
+        <img src="images/artist_2.jpg" alt="Artist 2">
+        <h3>Ms. Roy</h3>
+        <p>Expert in watercolors and abstract art.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="classes">
+    <h1>Upcoming Classes</h1>
+    <div class="class-card">
+      <h3>Beginner Pencil Drawing</h3>
+      <p>Instructor: Mr. Devid<br>Date: June 15, 2025<br>Time: 10:00 AM - 12:00 PM</p>
+      <button class="btn">Book Now</button>
+    </div>
+    <div class="class-card">
+      <h3>Abstract Watercolor Techniques</h3>
+      <p>Instructor:Ms.Roy <br>Date: June 20, 2025<br>Time: 2:00 PM - 4:00 PM</p>
+      <button class="btn">Book Now</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: drawandlearn@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Draw & Learn. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+const navbar = document.getElementById('navbar');
+
+// Toggle nav visibility
+menuToggle.addEventListener('click', () => {
+  navbar.classList.toggle('show');
+});
+
+// Optional: Auto-close nav on mobile after clicking a link
+document.querySelectorAll('#navbar a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      navbar.classList.remove('show');
+    }
+  });
+});
+
+  </script>
+</body>
+</html>
